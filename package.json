@@ -1,0 +1,44 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnPotter12/cursova.git"
+  },
+  "author": "Maxim Honchar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnPotter12/cursova/issues"
+  },
+  "homepage": "https://github.com/JohnPotter12/cursova#readme",
+  "dependencies": {
+    "angular2-materialize": "^15.1.10",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.0.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "pg": "^8.10.0",
+    "postgres": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/materialize-css": "^1.0.11",
+    "concurrently": "^8.2.2"
+  }
+}
